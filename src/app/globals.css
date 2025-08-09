@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home_page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(223, 234, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_heading{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.counter_component {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter_head{
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;    
+}
+
+.counter_buttons{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(44, 115, 255);
+    font-size: x-large;
+    color: rgb(44, 115, 255);
+    background-color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.counter_buttons:hover{
+    background-color: rgb(44, 115, 255);
+    color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.counter_buttons:active{
+    transform: scale(0.9);
+}
+.counter span{
+    align-self: center;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+
+
+.add_btn{
+    width: 85%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgb(49, 100, 204);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.add_btn:hover{
+    transform: scale(1.05);
+}
+.add_btn:active{
+    transform: scale(0.95);
+}
+
+
+
+
+.list_container {
+    margin: 20px;
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.list_heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+
+.list_buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.reset_btn, .sort_btn {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: medium;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
+}
+.reset_btn:active, .sort_btn:active {
+    transform: scale(0.95);
+}
+
+.reset_btn {
+    border: 2px solid rgb(231, 54, 23);
+    padding: 4px 20px;
+    color: rgb(231, 54, 23);
+    background-color: white;
+}
+.reset_btn:hover {
+    background-color: rgb(231, 54, 23);
+    color: white;
+}
+
+.sort_btn {
+    background-color: rgb(49, 100, 204);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 20px;
+}
+
+.filter_icon{
+    width: 25px;
+}
+
+
+.list_content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.list_item{
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.list_item:hover {
+    background-color: rgb(239, 242, 254);
+    transform: scale(1.05);
+}
+
+.list_number {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: large;
+    font-weight:  bold;
+}
+
+.rank{
+    font-size: medium;
+    color: rgb(100, 100, 100);
+    font-weight: normal;
+}
+
+.delete_btn{
+    border: none;
+    font-size: large;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(100, 100, 100);
+}
+.delete_btn:hover{
+    color: rgb(231, 54, 23);
+}
+
+
+.list_total {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(20, 58, 196);
+    margin-top: 10px;
+    background-color: rgb(221, 231, 253);
+    border-radius: 10px;
+    padding: 15px 20px;
+}

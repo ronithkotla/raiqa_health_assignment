@@ -22,11 +22,11 @@ export default function ListView({ list, removeFromList }: { list: number[]; rem
   });
 
   // Delete a specific number from the list
-  const deleteNumber = (numberToDelete) => {
-    removeFromList((previousList) => 
-      previousList.filter((item) => item !== numberToDelete)
-    );
-  };
+  const deleteNumber = (numberToDelete: number) => {
+  removeFromList((previousList: number[]) =>
+    previousList.filter((item) => item !== numberToDelete)
+  );
+};
 
   // Clear the entire list
   const clearAllNumbers = () => {
@@ -94,3 +94,4 @@ export default function ListView({ list, removeFromList }: { list: number[]; rem
   );
 
 }
+

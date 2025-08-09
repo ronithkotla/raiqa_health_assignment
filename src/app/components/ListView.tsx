@@ -34,18 +34,18 @@ export default function ListView({ list, removeFromList }: { list: number[]; rem
   };
 
   // Ranking the numbers in the list
-  const createRankingMap = (numbers) => {
-    // Get unique numbers and sort them from highest to lowest
-    const uniqueNumbers = [...new Set(numbers)].sort((a, b) => b - a);
-    
-    // Map each number with its rank
-    const rankingMap = {};
-    uniqueNumbers.forEach((number, index) => {
-      rankingMap[number] = index + 1; 
-    });
-    
-    return rankingMap;
-  };
+  const createRankingMap = (numbers: number[]) => {
+  // Get unique numbers and sort them from highest to lowest
+  const uniqueNumbers = [...new Set(numbers)].sort((a, b) => b - a);
+
+  // Map each number with its rank
+  const rankingMap: Record<number, number> = {};
+  uniqueNumbers.forEach((number, index) => {
+    rankingMap[number] = index + 1;
+  });
+
+  return rankingMap;
+};
 
   // get the rank map
   const numberRanks = createRankingMap(list);
@@ -94,5 +94,6 @@ export default function ListView({ list, removeFromList }: { list: number[]; rem
   );
 
 }
+
 
 

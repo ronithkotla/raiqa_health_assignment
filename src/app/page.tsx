@@ -4,7 +4,7 @@ import Counter from "./components/Counter";
 import ListView from "./components/ListView";
 
 export default function Home() {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState<number[]>([]);
 
   useEffect(() => {
     const savedList = JSON.parse(localStorage.getItem("countList") || "[]");

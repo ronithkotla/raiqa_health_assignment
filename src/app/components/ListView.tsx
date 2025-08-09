@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 
-export default function ListView({ list, removeFromList }) {
+export default function ListView({ list, removeFromList }: { list: number[]; removeFromList: (value: number) => void }) {
   
   const [isAscending, setIsAscending] = useState(false);
 
@@ -92,4 +92,5 @@ export default function ListView({ list, removeFromList }) {
       </div>
     </div>
   );
+
 }

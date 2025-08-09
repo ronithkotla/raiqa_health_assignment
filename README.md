@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## RAIQA Health Assignment for Software Engineer Role
 
-## Getting Started
+Vercel Deployment Link: 
+https://raiqa-health-assignment-swoe.vercel.app/
 
-First, run the development server:
+### Files:
+- Components/Counter.tsx for Incrementing/Decrementing the number and adding to List.
+- Components/ListView.tsx for Displaying the List with Options to sort , Delete, Reset and Total Numbers.
+- page.tsx (main file) that handles the Local Storage and pass the List as Props to components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Objective 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Build a simple React or Next.js application that allows users to increment/decrement a counter, add values to a list, and sort the list in ascending or descending order. 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Functional Requirements 
 
-## Learn More
+1. Counter Functionality 
 
-To learn more about Next.js, take a look at the following resources:
+- Display a number initialized to 0 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Include a “+” button to increment the number 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Include a “-“ button to decrement the number (but not below 0) 
 
-## Deploy on Vercel
+- Include an Add button that adds the current number to a list only if it's greater than 0 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Include an Add button that resets the counter to 0 after adding 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. List Display 
+
+- Show all added numbers in a list below the counter 
+
+- Prevent duplicates (optional) 
+
+3. Sorting Feature 
+
+- Include a Sort button with toggle functionality: 
+
+- Clicking it switches between ascending and descending order 
+
+- The list should update accordingly 

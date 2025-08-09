@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function Counter({ list, addToList }) {
+export default function Counter({ list, addToList }: { list: number[]; addToList: (value: number) => void }) {
     const [count, setCount] = useState(0);
 
     const handleAddToList = () => {
@@ -39,3 +39,4 @@ export default function Counter({ list, addToList }) {
         </div>
     );
 }
+
